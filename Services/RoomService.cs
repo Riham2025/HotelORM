@@ -28,7 +28,7 @@ namespace HotelORM.Services
             _roomRepo.UpdateRoomAvailability(roomId, isAvailable); // This line calls the UpdateRoomAvailability method of the RoomRepository to change the availability status of the room.
         }
 
-        public List<Room> ListRooms() => _roomRepo.GetAllRooms();
+        public List<Room> ListRooms() => _roomRepo.GetAllRooms(); // Retrieves all rooms from the database and returns them as a list.
     }
 
 }
