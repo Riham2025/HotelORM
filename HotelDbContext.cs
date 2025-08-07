@@ -15,16 +15,16 @@ namespace HotelORM
         // In a real application, this would typically inherit from DbContext in Entity Framework.
         // For now, this class is empty and serves as a placeholder for future implementation.
 
-         
-        
-            protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
-            {
-            optionsBuilder.UseSqlServer("Data Source=YOUR_SERVER;Initial Catalog=YOUR_DB;Integrated Security=True;TrustServerCertificate=True"); // Replace with your actual connection string.
 
+
+        // HotelDbContext.cs
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=DESKTOP-BDRD4NF;Database=HotelDB;Trusted_Connection=True;TrustServerCertificate=True;");
         }
 
-        public DbSet<Room> Rooms { get; set; } // Represents a collection of Room entities in the database.
 
+        public DbSet<Room> Rooms { get; set; } // Represents a collection of Room entities in the database.
 
 
     }
