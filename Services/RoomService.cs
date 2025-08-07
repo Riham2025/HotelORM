@@ -10,7 +10,7 @@ namespace HotelORM.Services
 {
     public class RoomService // This class is responsible for managing room-related operations in the hotel management system.
     {
-        private readonly RoomRepository _roomRepo;
+        private readonly RoomRepository _roomRepo; // This field holds an instance of the RoomRepository, which is used to interact with the room data in the database.
 
         public RoomService(RoomRepository roomRepo)
         {
