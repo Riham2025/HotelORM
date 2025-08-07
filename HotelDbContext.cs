@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelORM
 {
-    public class HotelDbContext 
+    public class HotelDbContext : DbContext
     {
         // This class represents the database context for the hotel management system.
         // It will be used to interact with the database, such as querying and saving data.
