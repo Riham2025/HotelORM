@@ -31,7 +31,7 @@ namespace HotelORM.Repository
         public void UpdateRoomAvailability(int roomId, bool available) // Updates the availability status of a room in the database.
         {
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId); // Finds the room with the specified RoomId in the database.
-            if (room != null)
+            if (room != null) // If the room is found, it updates its availability status.
             {
                 room.IsAvailable = available;
                 _context.SaveChanges();
