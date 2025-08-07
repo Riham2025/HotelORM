@@ -19,7 +19,7 @@ namespace HotelORM.Services
 
         public void CreateRoom(string number) // Adds a new room with the specified room number to the database.
         {
-            Room room = new Room { RoomNumber = number, IsAvailable = true };
+            Room room = new Room { RoomNumber = number, IsAvailable = true }; // This creates a new Room object with the provided room number and sets its availability to true.
             _roomRepo.AddRoom(room);
         }
 
