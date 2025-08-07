@@ -22,7 +22,7 @@ namespace HotelORM.Repository
 
         public void AddRoom(Room room) // Adds a new room to the database.
         {
-            _context.Rooms.Add(room);
+            _context.Rooms.Add(room); // This line adds the room entity to the Rooms DbSet in the context.
             _context.SaveChanges();
         }
 
