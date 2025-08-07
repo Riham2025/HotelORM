@@ -12,7 +12,7 @@ namespace HotelORM.Services
     {
         private readonly RoomRepository _roomRepo; // This field holds an instance of the RoomRepository, which is used to interact with the room data in the database.
 
-        public RoomService(RoomRepository roomRepo)
+        public RoomService(RoomRepository roomRepo) // Constructor that initializes the RoomService with a RoomRepository instance.
         {
             _roomRepo = roomRepo;
         }
