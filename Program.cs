@@ -11,7 +11,7 @@ namespace HotelORM
             context.Database.EnsureCreated(); 
 
             RoomRepository roomRepo = new RoomRepository(context); // This creates an instance of the RoomRepository, which will be used to interact with the room data in the database.
-            RoomService roomService = new RoomService(roomRepo);
+            RoomService roomService = new RoomService(roomRepo); // This creates an instance of the RoomService, which will handle room-related operations using the RoomRepository.
 
             roomService.CreateRoom("101");
             roomService.CreateRoom("102");
