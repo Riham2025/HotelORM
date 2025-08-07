@@ -28,7 +28,7 @@ namespace HotelORM.Repository
 
         public List<Room> GetAllRooms() => _context.Rooms.ToList(); // Retrieves all rooms from the database and returns them as a list.
 
-        public void UpdateRoomAvailability(int roomId, bool available)
+        public void UpdateRoomAvailability(int roomId, bool available) // Updates the availability status of a room in the database.
         {
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
             if (room != null)
