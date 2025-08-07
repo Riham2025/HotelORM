@@ -15,7 +15,7 @@ namespace HotelORM.Repository
     {
         private readonly HotelDbContext _context; // Represents the database context used to interact with the database.
 
-        public RoomRepository(HotelDbContext context)
+        public RoomRepository(HotelDbContext context) // Constructor that initializes the RoomRepository with a HotelDbContext instance.
         {
             _context = context;
         }
