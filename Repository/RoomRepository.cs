@@ -34,7 +34,7 @@ namespace HotelORM.Repository
             if (room != null) // If the room is found, it updates its availability status.
             {
                 room.IsAvailable = available; // Sets the IsAvailable property of the room to the specified value.
-                _context.SaveChanges();
+                _context.SaveChanges(); // Saves the changes to the database, updating the room's availability status.
             }
         }
     }
