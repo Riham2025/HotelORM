@@ -20,12 +20,9 @@ namespace HotelORM
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) 
             {
                 optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=HotelDB;Integrated Security=True;");// Connection string to the database
-        }
+            }
 
             public DbSet<Room> Rooms { get; set; } // Represents a collection of Room entities in the database.
-
-
-
 
 
 
