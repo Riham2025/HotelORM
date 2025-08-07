@@ -7,8 +7,15 @@ using System.Threading.Tasks;
 
 namespace HotelORM.Models
 {
+    // This class represents a hotel room entity in the database
     public class Room 
     {
+        
+        [Key] 
+        public int RoomId { get; set; } 
+        public string RoomNumber { get; set; }
+        public bool IsAvailable { get; set; }
     }
+
 
 }
