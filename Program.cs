@@ -16,7 +16,7 @@ namespace HotelORM
             roomService.CreateRoom("101"); // This adds a new room with the number "101" to the database.
             roomService.CreateRoom("102"); // This adds another room with the number "102" to the database.
 
-            foreach (var room in roomService.ListRooms())
+            foreach (var room in roomService.ListRooms()) // This retrieves all rooms from the database and iterates through them.
             {
                 Console.WriteLine($"Room: {room.RoomNumber} - Available: {room.IsAvailable}");
             }
