@@ -26,7 +26,7 @@ namespace HotelORM.Repository
             _context.SaveChanges(); // This line saves the changes to the database, persisting the new room entity.
         }
 
-        public List<Room> GetAllRooms() => _context.Rooms.ToList();
+        public List<Room> GetAllRooms() => _context.Rooms.ToList(); // Retrieves all rooms from the database and returns them as a list.
 
         public void UpdateRoomAvailability(int roomId, bool available)
         {
