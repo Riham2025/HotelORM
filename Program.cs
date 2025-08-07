@@ -18,7 +18,7 @@ namespace HotelORM
 
             foreach (var room in roomService.ListRooms()) // This retrieves all rooms from the database and iterates through them.
             {
-                Console.WriteLine($"Room: {room.RoomNumber} - Available: {room.IsAvailable}");
+                Console.WriteLine($"Room: {room.RoomNumber} - Available: {room.IsAvailable}"); // This prints the room number and its availability status to the console.
             }
         }
 
