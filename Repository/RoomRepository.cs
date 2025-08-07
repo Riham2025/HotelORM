@@ -33,7 +33,7 @@ namespace HotelORM.Repository
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId); // Finds the room with the specified RoomId in the database.
             if (room != null) // If the room is found, it updates its availability status.
             {
-                room.IsAvailable = available;
+                room.IsAvailable = available; // Sets the IsAvailable property of the room to the specified value.
                 _context.SaveChanges();
             }
         }
