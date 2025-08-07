@@ -13,7 +13,7 @@ namespace HotelORM.Models
         // Properties of the Room class
         [Key] 
         public int RoomId { get; set; } // Unique identifier for the room
-        public string RoomNumber { get; set; }
+        public string RoomNumber { get; set; } // Room number or identifier
         public bool IsAvailable { get; set; }
     }
 
