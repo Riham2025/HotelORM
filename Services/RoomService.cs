@@ -23,7 +23,7 @@ namespace HotelORM.Services
             _roomRepo.AddRoom(room); // This line calls the AddRoom method of the RoomRepository to save the new room to the database.
         }
 
-        public void SetRoomAvailable(int roomId, bool isAvailable)
+        public void SetRoomAvailable(int roomId, bool isAvailable) // Updates the availability status of a room with the specified room ID in the database.
         {
             _roomRepo.UpdateRoomAvailability(roomId, isAvailable);
         }
