@@ -14,7 +14,7 @@ namespace HotelORM.Services
 
         public RoomService(RoomRepository roomRepo) // Constructor that initializes the RoomService with a RoomRepository instance.
         {
-            _roomRepo = roomRepo;
+            _roomRepo = roomRepo; // This allows the RoomService to use the methods defined in the RoomRepository to perform operations on room data.
         }
 
         public void CreateRoom(string number)
