@@ -14,7 +14,7 @@ namespace HotelORM
             RoomService roomService = new RoomService(roomRepo); // This creates an instance of the RoomService, which will handle room-related operations using the RoomRepository.
 
             roomService.CreateRoom("101"); // This adds a new room with the number "101" to the database.
-            roomService.CreateRoom("102");
+            roomService.CreateRoom("102"); // This adds another room with the number "102" to the database.
 
             foreach (var room in roomService.ListRooms())
             {
