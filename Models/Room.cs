@@ -10,7 +10,7 @@ namespace HotelORM.Models
     // This class represents a hotel room entity in the database
     public class Room 
     {
-        
+        // Properties of the Room class
         [Key] 
         public int RoomId { get; set; } 
         public string RoomNumber { get; set; }
