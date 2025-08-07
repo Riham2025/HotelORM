@@ -13,7 +13,7 @@ namespace HotelORM.Repository
                                 // The class interacts with the HotelDbContext to perform database operations.
                                 // In a real application, this would typically implement an interface for better abstraction.
     {
-        private readonly HotelDbContext _context;
+        private readonly HotelDbContext _context; // Represents the database context used to interact with the database.
 
         public RoomRepository(HotelDbContext context)
         {
