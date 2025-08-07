@@ -14,7 +14,7 @@ namespace HotelORM.Models
         [Key] 
         public int RoomId { get; set; } // Unique identifier for the room
         public string RoomNumber { get; set; } // Room number or identifier
-        public bool IsAvailable { get; set; }
+        public bool IsAvailable { get; set; } // Indicates if the room is available for booking
     }
 
 
