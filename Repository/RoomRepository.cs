@@ -17,10 +17,10 @@ namespace HotelORM.Repository
 
         public RoomRepository(HotelDbContext context) // Constructor that initializes the RoomRepository with a HotelDbContext instance.
         {
-            _context = context;
+            _context = context; 
         }
 
-        public void AddRoom(Room room)
+        public void AddRoom(Room room) // Adds a new room to the database.
         {
             _context.Rooms.Add(room);
             _context.SaveChanges();
