@@ -17,7 +17,7 @@ namespace HotelORM.Services
             _roomRepo = roomRepo; // This allows the RoomService to use the methods defined in the RoomRepository to perform operations on room data.
         }
 
-        public void CreateRoom(string number)
+        public void CreateRoom(string number) // Adds a new room with the specified room number to the database.
         {
             Room room = new Room { RoomNumber = number, IsAvailable = true };
             _roomRepo.AddRoom(room);
