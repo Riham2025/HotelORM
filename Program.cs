@@ -8,7 +8,7 @@ namespace HotelORM
         static void Main(string[] args) 
         {
             using HotelDbContext context = new HotelDbContext(); // This creates an instance of the HotelDbContext, which is used to interact with the database. The using statement ensures that the context is disposed of properly after use.
-            context.Database.EnsureCreated(); 
+            context.Database.EnsureCreated(); // This line checks if the database exists and creates it if it does not. It ensures that the database schema is set up before any operations are performed on it.
 
             RoomRepository roomRepo = new RoomRepository(context); // This creates an instance of the RoomRepository, which will be used to interact with the room data in the database.
             RoomService roomService = new RoomService(roomRepo); // This creates an instance of the RoomService, which will handle room-related operations using the RoomRepository.
